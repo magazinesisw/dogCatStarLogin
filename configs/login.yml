@@ -1,0 +1,9 @@
+loginTestCases:
+    username: "wwbzdqxsd@foxmail.com"
+    password: "75ueti12"
+    expectedResult: "會員中心"
+    expectedUserName: "wwbzdqxsd"
+    expectedURL: "https://www.dogcatstar.com/my-account/?no-cache"
+
+loginURL: "https://www.dogcatstar.com/my-account/"
+
