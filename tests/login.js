@@ -3,6 +3,8 @@ const LoginPage = require('../Business_modules/loginPageMailBox');
 const loadYaml = require('../utils/loadYaml'); // 加载 YAML 的工具
 
 
+
+//case中我写了不少locator作为定位，没有将他放到page里面去，是因为这个我想将page的登录作为一个单独抽出的登录方法，后续调用不需要再重复断言和locator操作
 test('case1：已设置密码的用户通过邮箱账号密码登录系统',async({page}) => {
      const  config = loadYaml('./configs/login.yml');
     const loginPage = new LoginPage(page);
